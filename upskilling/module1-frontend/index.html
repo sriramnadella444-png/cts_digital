@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Local Community Event Portal</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onbeforeunload="return warningMessage()">
+
+<!-- HEADER -->
+
+<header id="mainHeader" class="text-center text-white p-4">
+
+    <h1 class="display-4 fw-bold">
+        Local Community Event Portal
+    </h1>
+
+</header>
+
+<!-- NAVIGATION -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">
+    Community Portal
+</a>
+
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navMenu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="navMenu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#home">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#events">Events</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#gallery">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#register">Register</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="help.html" target="_blank">
+Help
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- WELCOME BANNER -->
+
+<div id="welcomeBanner">
+
+Welcome User!
+
+<span style="color:red; font-weight:bold;">
+Special Offer: Free Registration
+</span>
+
+</div>
+
+<!-- HOME SECTION -->
+
+<section id="home" class="eventCard container mt-4">
+
+<h2 class="highlight">
+Welcome
+</h2>
+
+<p>
+Welcome to our Local Community Event Portal.
+Explore events, workshops, conferences,
+sports activities and more.
+</p>
+
+</section>
+
+<!-- EVENTS SECTION -->
+
+<section id="events" class="eventCard container mt-4">
+
+<h2 class="highlight">
+Upcoming Events
+</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card shadow-lg">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhiRTjrC_WgvxkRH2PJYbsDt8mnuT0qWQHog&s"
+class="card-img-top galleryImage">
+
+<div class="card-body">
+
+<h5 class="card-title">
+Music Event
+</h5>
+
+<p class="card-text">
+Enjoy live music performances.
+</p>
+
+<button class="btn btn-primary registerBtn">
+Register
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow-lg">
+
+<img src="https://www.storylines.com/hs-fs/hubfs/Blogs/Sports/Athletics.jpg?width=800&height=533&name=Athletics.jpg"
+class="card-img-top galleryImage">
+
+<div class="card-body">
+
+<h5 class="card-title">
+Sports Event
+</h5>
+
+<p class="card-text">
+Participate in sports activities.
+</p>
+
+<button class="btn btn-success registerBtn">
+Register
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card shadow-lg">
+
+<img src="https://images.indianexpress.com/2021/03/food-festival_1200_crowne-plaza.jpg?w=1200"
+class="card-img-top galleryImage">
+
+<div class="card-body">
+
+<h5 class="card-title">
+Food Festival
+</h5>
+
+<p class="card-text">
+Taste delicious food items.
+</p>
+
+<button class="btn btn-danger registerBtn">
+Register
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery" class="eventCard container mt-4">
+
+<h2 class="highlight">
+Event Gallery
+</h2>
+
+<table class="table table-bordered text-center">
+
+<tr>
+
+<td>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwTOP-xfRnUQpLaLR2YHt3xmZN0ThOjVpYJw&s"
+class="galleryImage"
+ondblclick="enlargeImage(this)">
+
+<p>Dance Event</p>
+
+</td>
+
+<td>
+
+<img src="https://images.stockcake.com/public/f/2/0/f204c4b9-97f6-4d56-a091-67e59fa969c6_large/outdoor-art-exhibition-stockcake.jpg"
+class="galleryImage"
+ondblclick="enlargeImage(this)">
+
+<p>Art Event</p>
+
+</td>
+
+<td>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJtYSvTWOLVNb_RDE0bhoml2gGiEZSa4ZrQ&s"
+class="galleryImage"
+ondblclick="enlargeImage(this)">
+
+<p>Book Fair</p>
+
+</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<!-- FORM SECTION -->
+
+<section id="register" class="eventCard container mt-4">
+
+<h2 class="highlight">
+Event Registration
+</h2>
+
+<form id="eventForm">
+
+<input type="text"
+placeholder="Enter Name"
+required
+autofocus
+class="form-control">
+
+<input type="email"
+placeholder="Enter Email"
+required
+class="form-control">
+
+<input type="date"
+required
+class="form-control">
+
+<input type="text"
+placeholder="Phone Number"
+onblur="validatePhone(this)"
+class="form-control">
+
+<select onchange="showFee(this.value)"
+class="form-select">
+
+<option>Select Event</option>
+
+<option value="100">
+Music Event
+</option>
+
+<option value="200">
+Sports Event
+</option>
+
+<option value="300">
+Food Festival
+</option>
+
+</select>
+
+<p id="fee"></p>
+
+<textarea
+placeholder="Feedback"
+onkeyup="countCharacters(this)"
+class="form-control"></textarea>
+
+<p id="charCount">
+Characters: 0
+</p>
+
+<button type="submit"
+class="btn btn-dark">
+Submit
+</button>
+
+<output id="confirmation"></output>
+
+</form>
+
+</section>
+
+<!-- VIDEO SECTION -->
+
+<section class="eventCard container mt-4">
+
+<h2 class="highlight">
+Promo Video
+</h2>
+
+<div class="text-center">
+
+<video width="500"
+height="280"
+controls
+preload="auto">
+
+<source src="video.mp4" type="video/mp4">
+
+</video>
+
+</div>
+
+</section>
+
+<!-- GEOLOCATION -->
+
+<section class="eventCard container mt-4">
+
+<h2 class="highlight">
+Nearby Events
+</h2>
+
+<button onclick="findLocation()"
+class="btn btn-primary">
+
+Find Nearby Events
+
+</button>
+
+<p id="location"></p>
+
+</section>
+
+<!-- NEWS SECTION -->
+
+<section class="news container mt-4">
+
+<h2>
+Community News
+</h2>
+
+<p>
+
+The city council has announced several upcoming
+events for local residents. Music festivals,
+food fairs, sports activities and art exhibitions
+are being organized throughout the year.
+
+</p>
+
+</section>
+
+<!-- FAQ SECTION -->
+
+<section class="container mt-4">
+
+<h2 class="highlight">
+FAQs
+</h2>
+
+<div class="accordion" id="faqAccordion">
+
+<div class="accordion-item">
+
+<h2 class="accordion-header">
+
+<button class="accordion-button"
+data-bs-toggle="collapse"
+data-bs-target="#faq1">
+
+How to Register?
+
+</button>
+
+</h2>
+
+<div id="faq1"
+class="accordion-collapse collapse show">
+
+<div class="accordion-body">
+
+Fill the form and click submit.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="eventCard container mt-4">
+
+<h2 class="highlight">
+Contact Us
+</h2>
+
+<p>Email: community@gmail.com</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>
+© 2026 Community Portal
+</p>
+
+<div>
+
+<i class="bi bi-facebook fs-2"></i>
+
+<i class="bi bi-instagram fs-2"></i>
+
+<i class="bi bi-twitter-x fs-2"></i>
+
+</div>
+
+<button onclick="clearStorage()"
+class="btn btn-danger mt-3">
+
+Clear Preferences
+
+</button>
+
+</footer>
+
+<!-- SUCCESS MODAL -->
+
+<div class="modal fade" id="successModal">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5 class="modal-title">
+Success
+</h5>
+
+<button class="btn-close"
+data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body">
+
+Registration Successful
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- jQuery -->
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- External JS -->
+
+<script src="script.js"></script>
+
+<script src="jquery.js"></script>
+
+</body>
+
+</html>
