@@ -1,0 +1,21 @@
+Calculator Tests
+
+Test 1:
+Addition(10,20)
+Expected Result = 30
+
+Test 2:
+Addition(5,5)
+Expected Result = 10
+
+Test 3:
+Addition(-5,5)
+Expected Result = 0
+
+Concepts Used:
+- TestFixture
+- Test
+- SetUp
+- TearDown
+- TestCase
+- Assert.That()
