@@ -1,0 +1,46 @@
+Financial Forecasting Analysis
+
+
+1. Recursion:
+
+Recursion is a technique where a method calls itself to solve a smaller part of the same problem.
+
+In financial forecasting, recursion helps calculate future values by repeatedly applying the growth rate for each year.
+
+
+2. Algorithm:
+
+The method takes:
+- Current value
+- Growth rate
+- Number of years
+
+For each year, it calculates the new value and calls itself until years become zero.
+
+
+3. Time Complexity:
+
+The recursive function runs once for each year.
+
+Time Complexity:
+O(n)
+
+Space Complexity:
+O(n)
+
+because each recursive call is stored in the call stack.
+
+
+4. Optimization:
+
+Recursive solutions can create many function calls for large inputs.
+
+To optimize:
+- Use iteration instead of recursion
+- Use memoization to store previous results
+
+
+Conclusion:
+
+The recursive approach is simple and works well for smaller forecasting periods.
+For large financial calculations, optimized approaches are preferred.
