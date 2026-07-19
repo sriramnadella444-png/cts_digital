@@ -1,0 +1,46 @@
+E-commerce Platform Search Function Analysis
+
+
+1. Big O Notation:
+
+Big O notation is used to describe the performance of an algorithm.
+It explains how the execution time increases when the input size grows.
+
+
+2. Linear Search:
+
+Best Case:
+O(1) - Product found at first position.
+
+Average Case:
+O(n) - Product may be found anywhere.
+
+Worst Case:
+O(n) - Product is not found or at last position.
+
+
+3. Binary Search:
+
+Best Case:
+O(1) - Middle element is the required product.
+
+Average Case:
+O(log n)
+
+Worst Case:
+O(log n)
+
+
+4. Comparison:
+
+Linear Search checks each product one by one.
+
+Binary Search divides the search space into half each time.
+
+Binary Search is faster for large datasets, but the data must be sorted first.
+
+
+Conclusion:
+
+For an e-commerce platform with many products,
+Binary Search is more suitable because it provides faster searching.
