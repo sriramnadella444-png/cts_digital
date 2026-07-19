@@ -1,0 +1,23 @@
+Method Tested
+
+USDToEuro()
+
+Dependency Mocked
+
+IDollarToEuroExchangeRateFeed
+
+Framework Used
+
+Moq
+
+Assertions Used
+
+Assert.That()
+
+Expected Outcome
+
+USD value should be converted
+to Euro using mocked exchange rate.
+
+Status:
+Completed
